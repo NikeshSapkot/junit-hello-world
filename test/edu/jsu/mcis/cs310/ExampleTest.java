@@ -48,5 +48,13 @@ public class ExampleTest {
         String actual = main.reverse("Hickory Dickory Dock");
         assertEquals(expectedReverse3, actual);
     }
+    @Test
+public void testCustomString() {
+    String input = "abc"; // Your test string
+   //  String expected = "xyz"; Deliberately incorrect expected value
+    String expected = "cba"; // corrected expected value
+    String actual = main.reverse(input);
+    assertEquals(expected, actual);
+}
     
 }
